@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id_class": {
+              "type": "integer"
+            },
+            "class_name": {
+              "type": "string"
+            },
+            "total_student": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id_class",
+            "class_name",
+            "total_student"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id_class": {
+              "type": "integer"
+            },
+            "class_name": {
+              "type": "string"
+            },
+            "total_student": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id_class",
+            "class_name",
+            "total_student"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}
